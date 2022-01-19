@@ -4,6 +4,7 @@ import time
 import os
 import subprocess
 import webbrowser
+import pyperclip 
 
 path = "HuaweiShare_content_share.txt"
 # yuanshen = "com.miHoYo.Yuanshen.apk"
@@ -17,9 +18,12 @@ while True:
             # regex to extract url
             urls = re.findall(r'(https?:\/\/[^\s]+)', text)
             print(urls)
-            for url in urls:
-                # open url in browse
-                webbrowser.open(url)
+            if len(urls) > 0:
+                for url in urls:
+                    # open url in browse
+                    webbrowser.open(url)
+            else:
+                pyperclip.copy(text)
         # delete the file
         os.remove(path)
     # if os.path.exists(yuanshen):
