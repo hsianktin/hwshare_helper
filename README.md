@@ -9,4 +9,4 @@ You may run hwshare_helper.py in the background by run the following script in H
 ```
 pythonw.exe hwshare_helper
 ```
-By default, it automatically acquire the text delivered by Huawei Share, and open the url inside it. **Then the text will be deleted**. The purpose of this script is to enable consistent experience among HUAWEI share between PC, tablets and phones.
+By default, it automatically acquire the text delivered by Huawei Share, and open the url inside it. If no url is found, the text will be copied into system clipboard. **Then the text will be deleted**. The purpose of this script is to enable consistent experience among HUAWEI share between PC, tablets and phones.
