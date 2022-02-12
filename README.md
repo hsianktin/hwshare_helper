@@ -2,7 +2,7 @@
 This project is a small tool for handling url-containing texts delivered by HUAWEI Share on Windows.
 
 ## config
-Before use, please install Python and pyperclip package. Place hwshare_helper.py in the Huawei Share folder where all files received by Huawei Share are placed.
+Before use, please install Python and associated pyperclip and pillow packages. Place hwshare_helper.py in the Huawei Share folder where all files received by Huawei Share are placed.
 
 ## usage
 You may run hwshare_helper.py in the background by run the following script in Huawei Share folder in the terminal.
